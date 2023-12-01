@@ -68,7 +68,7 @@ export const Sidebar = ({ storageKey = '' }: SidebarProps) => {
       <Accordion
         type="multiple"
         defaultValue={defaultAccordioValue}
-        className="mx-2"
+        className="mx-2 space-y-2"
       >
         {userMemberships.data.map(({ organization }) => (
           <NavItem

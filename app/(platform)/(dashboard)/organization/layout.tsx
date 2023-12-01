@@ -11,8 +11,7 @@ export default function DashboardLayout({
         mx-auto"
     >
       <div className="flex gap-x-7">
-        {/* TODO: added hidden to classnames */}
-        <div className="w-64 shrink-0  md:block">
+        <div className="w-64 shrink-0 hidden md:block">
           <Sidebar />
         </div>
         {children}
