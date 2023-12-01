@@ -1,6 +1,6 @@
 import { OrganizationList } from '@clerk/nextjs'
 
-const CreateOrganization = () => {
+export default function CreateOrganizationPage() {
   return (
     <OrganizationList
       hidePersonal
@@ -9,5 +9,3 @@ const CreateOrganization = () => {
     />
   )
 }
-
-export default CreateOrganization
