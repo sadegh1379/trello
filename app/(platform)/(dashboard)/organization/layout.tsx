@@ -1,3 +1,5 @@
+import { Sidebar } from '../_components/Sidebar'
+
 export default function DashboardLayout({
   children,
 }: {
@@ -9,7 +11,10 @@ export default function DashboardLayout({
         mx-auto"
     >
       <div className="flex gap-x-7">
-        <div className="w-64 shrink-0 hidden md:block">{/* sidebar */}</div>
+        {/* TODO: added hidden to classnames */}
+        <div className="w-64 shrink-0  md:block">
+          <Sidebar />
+        </div>
         {children}
       </div>
     </main>
